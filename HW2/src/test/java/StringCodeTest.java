@@ -24,7 +24,7 @@ public class StringCodeTest {
 
 	@Test
 	public void testBlowup_DigitsNextToEachOther() {
-		assertEquals("a33111", StringCode.blowup("a231"));
+		assertEquals("2xxx", StringCode.blowup("12x"));
 	}
 
 	@Test
@@ -84,5 +84,10 @@ public class StringCodeTest {
 	}
 
 	// Need test cases for stringIntersect
+
+    @Test
+    public void teststringIntersect() {
+        assertEquals(true, StringCode.stringIntersect("tranthinguyenha", "thihanguyentran",5));
+    }
 	
 }
